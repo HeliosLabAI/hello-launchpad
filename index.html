@@ -3,56 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Launchpad</title>
+    <title>Our Planet | Climate Action Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464822756936-6976970bd787?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
         }
-        .container {
-            padding: 2rem;
+        .glass {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 12px 24px;
-            background: white;
-            color: #764ba2;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-        .btn:hover {
-            transform: scale(1.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>🚀 Hello Launchpad</h1>
-        <p>Your journey to the stars starts here.</p>
-        <a href="#" class="btn">Get Started</a>
-    </div>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass text-white">
+        <div class="text-2xl font-extrabold tracking-tighter">EARTH<span class="text-emerald-400">GUARD</span></div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#about" class="hover:text-emerald-400 transition">The Crisis</a>
+            <a href="#solutions" class="hover:text-emerald-400 transition">Solutions</a>
+            <a href="#act" class="bg-emerald-500 px-4 py-2 rounded-full hover:bg-emerald-600 transition">Take Action</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight">The Clock is Ticking for <span class="text-emerald-400">Our Home.</span></h1>
+            <p class="text-lg md:text-2xl mb-10 text-slate-200 font-light">Climate change isn't a future threat. It's happening now. Together, we can rewrite the ending.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#about" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-100 transition">Learn More</a>
+                <a href="#act" class="border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-slate-900 transition">Join the Movement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Crisis -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">The Reality</h2>
+            <div class="h-1 w-20 bg-emerald-500 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
+                <div class="text-4xl mb-4">🌡️</div>
+                <h3 class="text-xl font-bold mb-2">Rising Temps</h3>
+                <p class="text-slate-600">Global temperatures are hitting record highs, causing heatwaves and disrupting ecosystems worldwide.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
+                <div class="text-4xl mb-4">🌊</div>
+                <h3 class="text-xl font-bold mb-2">Melting Ice</h3>
+                <p class="text-slate-600">Polar ice caps are vanishing, leading to rising sea levels that threaten coastal cities.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
+                <div class="text-4xl mb-4">🔥</div>
+                <h3 class="text-xl font-bold mb-2">Extreme Weather</h3>
+                <p class="text-slate-600">Wildfires, hurricanes, and floods are becoming more frequent and more destructive.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1473341304170-959Kw38d8634?auto=format&fit=crop&q=80&w=1000" alt="Solar Panels" class="rounded-3xl shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-6">There is Still <span class="text-emerald-400">Hope.</span></h2>
+                <p class="text-slate-400 text-lg mb-8">We have the technology and the knowledge to reverse the trend. The only thing missing is collective will.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-emerald-400">✔</span>
+                        <span>Transition to 100% Renewable Energy</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-emerald-400">✔</span>
+                        <span>Reforestation and Ecosystem Restoration</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-emerald-400">✔</span>
+                        <span>Sustainable Urban Planning & Transport</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="act" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto bg-emerald-500 rounded-3xl p-12 text-white shadow-2xl shadow-emerald-200">
+            <h2 class="text-4xl font-bold mb-6">Ready to make a difference?</h2>
+            <p class="text-emerald-100 text-lg mb-10">Join thousands of others fighting for a livable future. Your small change today is a giant leap for tomorrow.</p>
+            <form class="flex flex-col md:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Enter your email" class="px-6 py-4 rounded-full text-slate-900 focus:outline-none w-full md:w-80">
+                <button class="bg-slate-900 text-white px-8 py-4 rounded-full font-bold hover:bg-slate-800 transition">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 EarthGuard. Built for a better tomorrow.</p>
+    </footer>
+
 </body>
 </html>
