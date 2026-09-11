@@ -9,7 +9,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464822756936-6976970bd787?auto=format&fit=crop&q=80&w=2070');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1464822756936-6976970bd787?auto=format&fit=crop&q=80&w=2070');
             background-size: cover;
             background-position: center;
         }
@@ -24,92 +24,96 @@
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass text-white">
-        <div class="text-2xl font-extrabold tracking-tighter">EARTH<span class="text-emerald-400">GUARD</span></div>
+        <div class="text-2xl font-extrabold tracking-tighter">EARTH<span class="text-red-500">GUARD</span></div>
         <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#about" class="hover:text-emerald-400 transition">The Crisis</a>
-            <a href="#solutions" class="hover:text-emerald-400 transition">Solutions</a>
-            <a href="#act" class="bg-emerald-500 px-4 py-2 rounded-full hover:bg-emerald-600 transition">Take Action</a>
+            <a href="#about" class="hover:text-red-500 transition">The Crisis</a>
+            <a href="#solutions" class="hover:text-red-500 transition">Solutions</a>
+            <a href="#act" class="bg-red-600 px-4 py-2 rounded-full hover:bg-red-700 transition">Take Action</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
         <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight">The Clock is Ticking for <span class="text-emerald-400">Our Home.</span></h1>
-            <p class="text-lg md:text-2xl mb-10 text-slate-200 font-light">Climate change isn't a future threat. It's happening now. Together, we can rewrite the ending.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#about" class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-100 transition">Learn More</a>
-                <a href="#act" class="border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-slate-900 transition">Join the Movement</a>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight">The Clock is Ticking for <span class="text-red-500">Our Home.</span></h1>
+            <p class="text-lg md:text-2xl mb-10 text-slate-200 font-light">Climate change isn't a future threat—it's a current emergency. Join the fight to save our planet.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#about" class="bg-red-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition shadow-lg shadow-red-900/20">Learn the Truth</a>
+                <a href="#act" class="bg-white/10 backdrop-blur-md px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition border border-white/30">Join the Movement</a>
             </div>
         </div>
     </section>
 
-    <!-- The Crisis -->
+    <!-- Crisis Section -->
     <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">The Reality</h2>
-            <div class="h-1 w-20 bg-emerald-500 mx-auto"></div>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">The <span class="text-red-600">Reality</span></h2>
+            <p class="text-slate-600 text-lg max-w-2xl mx-auto">Our planet is warming at an unprecedented rate. The signs are everywhere, and the time to act is now.</p>
         </div>
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200 border-t-4 border-red-600">
                 <div class="text-4xl mb-4">🌡️</div>
-                <h3 class="text-xl font-bold mb-2">Rising Temps</h3>
+                <h3 class="text-2xl font-bold mb-3">Rising Temps</h3>
                 <p class="text-slate-600">Global temperatures are hitting record highs, causing heatwaves and disrupting ecosystems worldwide.</p>
             </div>
-            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="text-4xl mb-4">🌊</div>
-                <h3 class="text-xl font-bold mb-2">Melting Ice</h3>
-                <p class="text-slate-600">Polar ice caps are vanishing, leading to rising sea levels that threaten coastal cities.</p>
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200 border-t-4 border-red-600">
+                <div class="text-4xl mb-4">❄️</div>
+                <h3 class="text-2xl font-bold mb-3">Melting Ice</h3>
+                <p class="text-slate-600">Polar ice caps are vanishing, leading to rising sea levels that threaten coastal cities across the globe.</p>
             </div>
-            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="text-4xl mb-4">🔥</div>
-                <h3 class="text-xl font-bold mb-2">Extreme Weather</h3>
-                <p class="text-slate-600">Wildfires, hurricanes, and floods are becoming more frequent and more destructive.</p>
+            <div class="p-8 rounded-3xl bg-white shadow-xl shadow-slate-200 border-t-4 border-red-600">
+                <div class="text-4xl mb-4">🌪️</div>
+                <h3 class="text-2xl font-bold mb-3">Extreme Weather</h3>
+                <p class="text-slate-600">More frequent and intense hurricanes, droughts, and wildfires are devastating communities.</p>
             </div>
         </div>
     </section>
 
-    <!-- Solutions -->
-    <section id="solutions" class="py-24 bg-slate-900 text-white px-6">
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-24 px-6 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <img src="https://images.unsplash.com/photo-1473341304170-959Kw38d8634?auto=format&fit=crop&q=80&w=1000" alt="Solar Panels" class="rounded-3xl shadow-2xl">
-            </div>
-            <div>
-                <h2 class="text-4xl font-bold mb-6">There is Still <span class="text-emerald-400">Hope.</span></h2>
-                <p class="text-slate-400 text-lg mb-8">We have the technology and the knowledge to reverse the trend. The only thing missing is collective will.</p>
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">There is still <span class="text-red-500">Hope.</span></h2>
+                <p class="text-slate-400 text-lg mb-8">We have the tools and the knowledge to reverse the damage. It just takes collective will and immediate action.</p>
                 <ul class="space-y-4">
                     <li class="flex items-center space-x-3">
-                        <span class="text-emerald-400">✔</span>
-                        <span>Transition to 100% Renewable Energy</span>
+                        <span class="bg-red-600 p-1 rounded-full text-xs">✓</span>
+                        <span class="text-slate-300">Transition to 100% Renewable Energy</span>
                     </li>
                     <li class="flex items-center space-x-3">
-                        <span class="text-emerald-400">✔</span>
-                        <span>Reforestation and Ecosystem Restoration</span>
+                        <span class="bg-red-600 p-1 rounded-full text-xs">✓</span>
+                        <span class="text-slate-300">Massive Reforestation Projects</span>
                     </li>
                     <li class="flex items-center space-x-3">
-                        <span class="text-emerald-400">✔</span>
-                        <span>Sustainable Urban Planning & Transport</span>
+                        <span class="bg-red-600 p-1 rounded-full text-xs">✓</span>
+                        <span class="text-slate-300">Sustainable Urban Planning</span>
                     </li>
                 </ul>
             </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=2070" class="rounded-3xl shadow-2xl" alt="Renewable Energy">
+                <div class="absolute -bottom-6 -left-6 bg-red-600 p-6 rounded-2xl hidden md:block">
+                    <p class="text-3xl font-bold">1.5°C</p>
+                    <p class="text-sm opacity-80">The Critical Limit</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Action Section -->
     <section id="act" class="py-24 px-6 text-center">
-        <div class="max-w-3xl mx-auto bg-emerald-500 rounded-3xl p-12 text-white shadow-2xl shadow-emerald-200">
-            <h2 class="text-4xl font-bold mb-6">Ready to make a difference?</h2>
-            <p class="text-emerald-100 text-lg mb-10">Join thousands of others fighting for a livable future. Your small change today is a giant leap for tomorrow.</p>
-            <form class="flex flex-col md:flex-row gap-4 justify-center">
-                <input type="email" placeholder="Enter your email" class="px-6 py-4 rounded-full text-slate-900 focus:outline-none w-full md:w-80">
-                <button class="bg-slate-900 text-white px-8 py-4 rounded-full font-bold hover:bg-slate-800 transition">Join Now</button>
+        <div class="max-w-3xl mx-auto bg-white p-12 rounded-3xl shadow-2xl border border-slate-100">
+            <h2 class="text-4xl font-extrabold mb-4">Join the <span class="text-red-600">Movement</span></h2>
+            <p class="text-slate-600 mb-8">Sign up to receive action alerts, local event notifications, and guides on how to reduce your footprint.</p>
+            <form class="flex flex-col md:flex-row gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-red-500 transition">
+                <button class="bg-red-600 text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition shadow-lg shadow-red-600/30">Get Involved</button>
             </form>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-500 border-t border-slate-200">
-        <p>&copy; 2026 EarthGuard. Built for a better tomorrow.</p>
+    <footer class="py-12 px-6 text-center text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 EarthGuard. All rights reserved. Built for the planet.</p>
     </footer>
 
 </body>
